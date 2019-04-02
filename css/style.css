@@ -8,3 +8,13 @@ ul{
   margin-right: 1em;
   padding-left: 74px;
 }
+
+header {
+  font-size: 3em;
+  color: rgb();
+  text-align: center;
+  background-color: rgba(144, 145, 233, 0.418);
+  padding: 10px;
+  border: 17px dotted red;
+  margin: 20px;
+}
