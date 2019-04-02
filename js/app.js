@@ -1,4 +1,4 @@
-
+'use strict';
 var hours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
 
 // 1st and pike store.
@@ -9,12 +9,13 @@ var pike = {
   cookiesPerHour:[],
   people:[],
   customers: function(){
-    for(var i = 0; i < hours.length; i++ )
-      this.people.push(Math.floor(Math.random() * Math.floor(this.maxCus)));
+    for(var i = 0; i < hours.length; i++ ){
+      this.people.push(Math.floor(Math.random() * (this.maxCus-this.minCus +1))+this.minCus);
+    }
   },
   cookies: function(){
     for(var i = 0; i < hours.length; i++){
-      this.cookiesPerHour.push(Math.floor(this.people[i] * this.ave));
+      this.cookiesPerHour.push(Math.ceil(this.people[i] * this.ave));
     }
   },
   totalNum: function(){
@@ -49,12 +50,13 @@ var seaTac = {
   people:[],
 
   customers: function(){
-    for(var i = 0; i < hours.length; i++ )
-      this.people.push(Math.floor(Math.random() * Math.floor(this.maxCus)));
+    for(var i = 0; i < hours.length; i++ ){
+      this.people.push(Math.floor(Math.random() * (this.maxCus-this.minCus +1))+this.minCus);
+    }
   },
   cookies: function(){
     for(var i = 0; i < hours.length; i++){
-      this.cookiesPerHour.push(Math.floor(this.people[i] * this.ave));
+      this.cookiesPerHour.push(Math.ceil(this.people[i] * this.ave));
     }
   },
   totalNum: function(){
@@ -87,12 +89,13 @@ var sea = {
   people:[],
 
   customers: function(){
-    for(var i = 0; i < hours.length; i++ )
-      this.people.push(Math.floor(Math.random() * Math.floor(this.maxCus)));
+    for(var i = 0; i < hours.length; i++ ){
+      this.people.push(Math.floor(Math.random() * (this.maxCus-this.minCus +1))+this.minCus);
+    }
   },
   cookies: function(){
     for(var i = 0; i < hours.length; i++){
-      this.cookiesPerHour.push(Math.floor(this.people[i] * this.ave));
+      this.cookiesPerHour.push(Math.ceil(this.people[i] * this.ave));
     }
   },
   totalNum: function(){
@@ -125,12 +128,13 @@ var cap = {
   people:[],
 
   customers: function(){
-    for(var i = 0; i < hours.length; i++ )
-      this.people.push(Math.floor(Math.random() * Math.floor(this.maxCus)));
+    for(var i = 0; i < hours.length; i++ ){
+      this.people.push(Math.floor(Math.random() * (this.maxCus-this.minCus +1))+this.minCus);
+    }
   },
   cookies: function(){
     for(var i = 0; i < hours.length; i++){
-      this.cookiesPerHour.push(Math.floor(this.people[i] * this.ave));
+      this.cookiesPerHour.push(Math.ceil(this.people[i] * this.ave));
     }
   },
   totalNum: function(){
@@ -165,12 +169,13 @@ var alki = {
   people:[],
 
   customers: function(){
-    for(var i = 0; i < hours.length; i++ )
-      this.people.push(Math.floor(Math.random() * Math.floor(this.maxCus)));
+    for(var i = 0; i < hours.length; i++ ){
+      this.people.push(Math.floor(Math.random() * (this.maxCus-this.minCus +1))+this.minCus);
+    }
   },
   cookies: function(){
     for(var i = 0; i < hours.length; i++){
-      this.cookiesPerHour.push(Math.floor(this.people[i] * this.ave));
+      this.cookiesPerHour.push(Math.ceil(this.people[i] * this.ave));
     }
   },
   totalNum: function(){
