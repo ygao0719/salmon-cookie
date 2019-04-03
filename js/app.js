@@ -32,7 +32,6 @@ Store.prototype.cookies=function(){
   }
 };
 Store.prototype.totalNum=function(){
-  //this.cookies();
   var total = 0;
   for(var i = 0; i < hours.length; i++){
     total += this.cookiesPerHour[i];
@@ -65,7 +64,7 @@ Store.prototype.render=function(){
 
 };
 
-//create a table frame.
+//create a table head.
 function tableHead(){
   var storeTable = document.getElementById('main');
   var trEl = document.createElement('tr');
@@ -82,14 +81,8 @@ function tableHead(){
       thEl.textContent = 'Daily Location Total';
       trEl.appendChild(thEl);
       storeTable.appendChild(trEl);
-
     }
   }
-
-  // var footer = storeTable.createTFoot();
-  // var row = footer.insertRow(0);
-  // var cell = row.insertCell(0);
-  // cell.innerHTML = '<b>Total</b>';
 }
 
 function renderStore() {
@@ -98,10 +91,8 @@ function renderStore() {
   }
 }
 
-
 //calculate hourly total cookies for all five stores.
 function totalAtFooter(){
-
   for (var i = 0; i < hours.length; i ++){
     var totalCookiePerHour = 0;
 
@@ -115,17 +106,25 @@ function totalAtFooter(){
   var tdEl = document.createElement('td');
   tdEl.textContent = 'Total';
   trEl.appendChild(tdEl);
-
-  for (var i = 0; i< hours.length; i++){
+  //print last row.
+  for (i = 0; i < hours.length; i++){
     tdEl = document.createElement('td');
     tdEl.textContent = storeCookiePerHour[i];
     trEl.appendChild(tdEl);
   }
+  //total cookies from all stores.
+  var totalAllStore = 0;
+  for (i =0;i<hours.length;i++){
+    totalAllStore += storeCookiePerHour[i];
+  }
+  tdEl = document.createElement('td');
+  tdEl.textContent = totalAllStore;
+  trEl.appendChild(tdEl);
+
   footData.appendChild(trEl);
 }
 
-
-
+//function call.
 tableHead();
 renderStore();
 totalAtFooter();
