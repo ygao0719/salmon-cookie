@@ -9,8 +9,31 @@
   <header>Pan's cookies store </header>
 </head>
 <body>
-  <table id="main"></table>
 
+  <form id="newStore">
+    <fieldset>
+      <legend>New Store info</legend>
+
+      <label for="storeName">New Store Location: </label>
+      <input name="storeName" type="text" size="15" required />
+
+      <label for="minCus">Minimum Customers: </label>
+      <input name="minCus" type="text" size="15" required/>
+
+      <label for="maxCus">Maximum Customers: </label>
+      <input name="maxCus" type="text" size="15" required/>
+
+      <label for="ave">Average cookies: </label>
+      <input name="ave" type="text" size="15" required/>
+
+      <button type="submit">Create new store!!!</button>
+    </fieldset>
+  </form>
+
+  <table id="main">
+    <thead id="t-head"></thead>
+    <tbody id="t-body"></tbody>
+  </table>
   <script src="js/app.js"></script>
 </body>
 </html>
