@@ -1,11 +1,36 @@
 
+header {
+  position: sticky;
+  font-size: 3em;
+  background-color: rgb(110, 177, 204);
+  text-align: center;
+  padding: 0px;
+  border: 17px;
+  margin: -5px;
+}
+p{
+  margin-top: 0%
+}
+header img{
+  float: left;
+}
+ul li{
+  display: inline;
+  font-size: 30px;
+  color: aliceblue;
+  padding: 20px;
+}
+
 .mainPicture{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
+footer{
+  background-color: rgb(160, 84, 179);
+}
 
 ul{
   color: rgb(34, 58, 66);
@@ -15,27 +40,15 @@ ul{
   margin-bottom: 2em;
   margin-left: 1em;
   margin-right: 1em;
-  padding-left: 74px;
+  padding-left: 22px;
 }
-
-header {
-  position: sticky;
-  font-size: 3em;
-  color: rgb();
-  text-align: center;
-  background-color: rgba(144, 145, 233, 0.418);
-  padding: 10px;
-  border: 17px;
-  margin: 20px;
-}
-
 
 * {
   font-family: 'Baloo', cursive;
 }
 
 body {
-  background: rgb(54, 91, 192);
+  background: rgb(122, 151, 230);
 }
 
 table {
