@@ -99,7 +99,7 @@ function totalAtFooter(){
     storeCookiePerHour.push(totalCookiePerHour);
   }
   var footData = document.getElementById('main');
-  
+  //add 'total' at the end of raw
   var trEl = document.createElement('tr');
   trEl.id = 'total-row';
   var tdEl = document.createElement('td');
