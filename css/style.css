@@ -1,3 +1,12 @@
+
+.mainPicture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
 ul{
   color: rgb(34, 58, 66);
   display:block;
@@ -10,6 +19,7 @@ ul{
 }
 
 header {
+  position: sticky;
   font-size: 3em;
   color: rgb();
   text-align: center;
@@ -86,3 +96,4 @@ button {
   background: -o-linear-gradient(top, #F0E8C7, #9C9060);
   background: -ms-linear-gradient(top, #F0E8C7, #9C9060);
 }
+

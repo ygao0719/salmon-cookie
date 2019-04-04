@@ -1,6 +1,6 @@
 'use strict';
 var hours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
-var storeCookiePerHour = [];
+// var storeCookiePerHour = [];
 var allStore = [];
 var newStore = document.getElementById('newStore');
 
@@ -83,7 +83,6 @@ function tableHead(){
 }
 
 function renderStore() {
-  
   for (var i = 0; i < allStore.length; i++) {
     allStore[i].render();
   }
@@ -91,7 +90,7 @@ function renderStore() {
 
 //calculate hourly total cookies for all five stores.
 function totalAtFooter(){
-  storeCookiePerHour = [];
+  var storeCookiePerHour = [];
   for (var i = 0; i < hours.length; i ++){
     var totalCookiePerHour = 0;
     for (var j =0; j < allStore.length; j++){
@@ -123,6 +122,7 @@ function totalAtFooter(){
 
   footData.appendChild(trEl);
 }
+
 // Event listener for comment submission form
 newStore.addEventListener('submit', handleNewStore);
 
@@ -144,6 +144,7 @@ function handleNewStore(event){
 
   newInput.render();
   totalAtFooter();
+  boomRow();
 }
 function boomRow(){
   var totalRow = document.getElementById('total-row');
@@ -156,4 +157,4 @@ function boomRow(){
 tableHead();
 renderStore();
 totalAtFooter();
-boomRow();
+
