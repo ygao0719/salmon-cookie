@@ -1,7 +1,6 @@
 
 header {
-  position: sticky;
-  font-size: 3em;
+  /* font-size: 3em; */
   background-color: rgb(110, 177, 204);
   text-align: center;
   padding: 0px;
@@ -9,42 +8,91 @@ header {
   margin: -7px;
   height: 250px;
 }
-p{
-  margin-top: 0%
-}
+body h1{
+  size: 40px;
+  margin-top: -6px;
+} 
 header img{
   float: left;
   height: 250px;
 }
 ul li{
-  display: inline;
+  display: inline-block;
   font-size: 30px;
   color: aliceblue;
-  padding: 20px;
+  padding: 30px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+main{
+  width: 960px;
+  margin-left: 240px ;
+  margin-top: 30px;
+
 }
 
 .mainPicture{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   width: 100%;
+
+}
+.fish{
+  float: left;
+  margin-right: 30px;
+}
+.frosted-cookie{
+  float: left;
+  margin-right: 30px;
+}
+.family img{
+  width: 900px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.shirt{
+  float: left;
+  margin-right: 30px;
+}
+main p {
+  margin-bottom: 250px;
+  
+} 
+footer{
+  background-color: rgb(28, 22, 31);
 }
 
-footer{
-  background-color: rgb(97, 89, 109);
+.locations ul li{
+  padding: 10px;
+}
+.hour ul li{
+  padding: 10px;
+}
+.contact ul li{
+  padding: 10px;
+}
+h5{
+  color:white;
+  margin: 0%;
+}
+div p{
+  color: #F0E8C7;
+  text-align: center;
 }
 
 ul{
-  color: rgb(34, 58, 66);
-  display:block;
-  list-style-type: circle;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: 1em;
-  margin-right: 1em;
-  padding-left: 22px;
+  color: rgb(125, 134, 138);
+  display:inline-block;
+  padding: 0%;
 }
 
+/* backend page. */
 * {
   font-family: 'Baloo', cursive;
 }
