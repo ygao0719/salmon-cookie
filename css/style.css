@@ -20,13 +20,12 @@ ul li{
   display: inline-block;
   font-size: 30px;
   color: aliceblue;
-  padding: 30px;
+  padding: 20px;
 }
 a {
   text-decoration: none;
   color: #fff;
 }
-
 
 main{
   width: 960px;
