@@ -13,7 +13,7 @@ Display the values of each array as unordered lists in the browser
 Calculating the sum of these hourly totals; your output for each location should look like this:
 
 
-update 4th April 2019
+###update 4th April 2019
 
       Style up the public facing page (index.html) to make it appealing to customers. NOTE: You must use all of the images in the adjacent asset directory. Your client insists that you use Every. Single. One.
 
